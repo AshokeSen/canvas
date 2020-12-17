@@ -2,12 +2,11 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Pacifico", cursive;
-
-  /* position: relative; */
 }
 
 li {
@@ -50,6 +49,7 @@ li {
   font-size: 20px;
 
   flex-direction: row;
+  z-index: 100;
 }
 
 .logo {
@@ -84,6 +84,29 @@ li {
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+  position: relative;
+}
+
+.nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  height: 5px;
+  width: 100%;
+  transform: translateX(-100%);
+  opacity: 0;
+  background: linear-gradient(
+    to right,
+    rgb(209, 169, 59),
+    rgb(45, 138, 102),
+    rgb(78, 78, 209)
+  );
+  transition: 0.4s ease-in-out;
+}
+
+.nav ul li a:hover::before {
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 .box {
