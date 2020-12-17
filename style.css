@@ -135,11 +135,6 @@ li {
   transition: transform 0.6s ease;
 }
 
-#three-container canvas {
-  height: 100%;
-  width: 100%;
-}
-
 .slide {
   height: 100%;
   width: 100%;

@@ -17,15 +17,15 @@ setInterval(() => {
   container.style.backgroundImage = pictures[index];
 }, 3000);
 
-const carousel = document.querySelector(".carousel");
+const carousel = document.querySelector(".three-container");
 const slides = document.querySelectorAll(".slide");
 
 let count = 1;
 
-// setInterval(() => {
-//   carousel.style.transform = "translateY(" + -count * 100 + "%)";
-//   count++;
-//   if (count === slides.length) {
-//     count = 0;
-//   }
-// }, 2000);
+setInterval(() => {
+  carousel.style.transform = "translateY(" + -count * 100 + "%)";
+  count++;
+  if (count === slides.length) {
+    count = 0;
+  }
+}, 2000);
