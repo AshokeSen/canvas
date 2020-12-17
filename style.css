@@ -351,4 +351,7 @@ li {
   .description p {
     font-size: 12px;
   }
+  .picture-gallery {
+    width: 100%;
+  }
 }
