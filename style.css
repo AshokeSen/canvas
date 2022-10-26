@@ -32,6 +32,7 @@ li {
 
 .container h1 {
   font-size: 90px;
+  z-index: 100;
   font-family: "Carter One", cursive;
   font-weight: 600;
   background-attachment: fixed;
